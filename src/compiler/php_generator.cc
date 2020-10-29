@@ -60,7 +60,7 @@ std::string MessageIdentifierName(const std::string& name,
   if (PackageName(file) != "") {
     oss << PackageName(file) << "\\";
   }
-  oss << grpc_generator::CapitalizeFirstLetter(tokens[tokens.size() - 1]);
+  oss << tokens[tokens.size() - 1];
   return oss.str();
 }
 
